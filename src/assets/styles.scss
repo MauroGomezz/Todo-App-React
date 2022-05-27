@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+body {
+    background-color: bisque;
+}
+
+.form-container{
+    background-color: aquamarine;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    padding: 2rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form {
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+        .todo-input {
+            flex-grow: 1;
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: solid 1px #999;
+        }
+        .todo-create {
+            border: none;
+            border-radius: 3px;
+            background-color: rgb(26, 76, 169);
+            color: white;
+            padding: 10px 20px;
+        }
+    }
+    button {
+        background: none;
+        border: 1px solid rgb(82, 77, 77);
+        padding: .5rem 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .button-edit {
+        background-color: rgb(42, 122, 221);
+    }
+    
+    .button-delete {
+        background-color: rgb(169, 26, 26);
+    }
+    .todo-container {
+        .todos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+
+            .button-container {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+}
