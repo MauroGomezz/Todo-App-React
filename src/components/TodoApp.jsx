@@ -16,7 +16,7 @@ function handleSubmit(e) {
     e.preventDefault();
 
     const newTdodo = {
-        id: Math.random()*100,
+        id: Date.now(),
         title: title,
         completed: false
     }
